@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://kit.fontawesome.com/4f8331f3bc.js" crossorigin="anonymous"></script>
+  <title>Edit Profile | BlogPro</title>
+</head>
+
+<body>
+  <div id="app">
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <h4>BlogPro</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/import">Import</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/export">Export</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="cover">
+      <div class="heading">
+        <h2>Edit Profile</h2>
+        <hr color="grey">
+      </div>
+      <div class="profileform">
+
+        <form method="POST" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Select Profile Picture</label>
+            <input class="form-control" type="file" name="img">
+            <input type="checkbox" name="options" id="option1" value="TRUE"> Keep Old Profile Picture
+          </div>
+          <br><br>
+          <div class="mb-3">
+            <label class="form-label">Set Bio</label>
+            <input class="form-control" placeholder="Feel Free to add emojis too" type="text" name="caption">
+            <input type="checkbox" name="options2" id="option2" value="TRUE"> Keep Old Bio
+          </div>
+          <br>
+          <input type="submit" value="Confirm Changes" class="profilebtn">
+        </form>
+      </div>
+
+      <div class="mascot">
+        <img class="mascotimg" title="Robo_selfie_1600x1200 Dribbble.gif"
+          src="https://cdn.dribbble.com/users/77598/screenshots/16399264/media/d86ceb1ad552398787fb76f343080aa6.gif">
+      </div>
+
+    </div>
+
+    <div class="child">
+      <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="/" role="button">
+              <i class="fa-solid fa-house"></i>
+            </a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="/addpost" role="button">
+              <i class="fa-solid fa-plus"></i>
+            </a>
+
+            <a class="btn btn-outline-light btn-floating m-1" :href="/profile/ + current_user" role="button">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </section>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="/static/main.js"></script>
+</body>
+</html>

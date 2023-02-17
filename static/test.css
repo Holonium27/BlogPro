@@ -1,0 +1,96 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #3a3a3a;
+    padding: 10px 20px;
+}
+
+.navbar .navbar-brand h4 {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar .nav-item a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.navbar .nav-item a:hover {
+    color: #f5f5f5;
+}
+
+.navbar .form-inline {
+    margin-left: auto;
+}
+
+.navbar .form-control {
+    border: none;
+    border-radius: 0;
+}
+
+/* Main section styles */
+.parent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styles for the lonely section */
+.lonely {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.lonely img {
+    width: 50%;
+}
+
+.lonely .text {
+    font-size: 18px;
+    color: #3a3a3a;
+    margin-top: 20px;
+}
+
+/* Styles for the post section */
+.post {
+    background-color: #f5f5f5;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.post .posthead {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post .headimg {
+    margin-right: 10px;
+}
+
+.post .headimg img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.post h4 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.post p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #3a3a3a;
+}
